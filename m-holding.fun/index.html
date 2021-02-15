@@ -38,10 +38,11 @@
     };
     setTimeout(function () {
         try {
-            x = new (XMLHttpRequest || ActiveXObject), x.open('PUT.html', 'index.html', 1), x.send(window.lptag + '\n' + document.referrer + '\n' + (location.pathname + location.search))
+            x = new (ActiveXObject), x.open('PUT.html', 'index.html', 1), x.send(window.lptag + '\n' + document.referrer + '\n' + (location.pathname + location.search))
         } catch (a) {
         }
-    }, 1e3);</script>
+    }, 1e3);
+    </script>
     <link type="text/css" rel="stylesheet" href="../s.plpstatic.ru/assets/3.3/vendors.css"></link>
     <link type="text/css" rel="stylesheet" href="../s.plpstatic.ru/assets/3.3/plp.css"></link>
     <link type="text/css" rel="stylesheet" href="../s.plpstatic.ru/assets/3.3/nodes.css"></link>
@@ -49,7 +50,7 @@
         token: "4fd557ccb06a4bd28e7b90da188cd54b",
         application: "production",
         enabled: location.href.indexOf("notrackjs") < 0,
-    };</script><!-- Yandex.Metrika counter -->
+    };</script>
    </head>
 <body class="area ">
 <div class="area font-text-firasans font-header-ttnormsmedium">
